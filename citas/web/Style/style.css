@@ -146,6 +146,12 @@ header{
     margin: auto;
     padding: auto;
 }
+.imagenTitulo{
+    display: block;
+    height: 60px;
+    margin: auto;
+    padding: 0;
+}
 .input {
     margin: 15px;
     padding: 5px;

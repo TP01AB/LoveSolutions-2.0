@@ -20,12 +20,14 @@
             <div class="col-m-4">
 
                 <img src="sources/Logo.png" class="imagenLogo escalado"/>
+                <img src="sources/Nombre.png" class="imagenTitulo"/>
+                        
             </div>
         </header>
         <main class="row">
             <div class=" col-m-3 col-l-4"></div>
             <form name="Login" id="Login" action="./Controllers/MainController.jsp" class="col-m-6 col-l-4" novalidate> 
-                <h1>LOGIN</h1>
+                <h1 class="tituloForm">Inicio Sesión</h1>
                 <hr>
                 <div class="m1">
                     <label for="email">
