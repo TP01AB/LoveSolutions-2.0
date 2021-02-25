@@ -22,60 +22,62 @@
 
             </div>
         </header>
-        <main class="row centrado">
+        <main class="centrado">
             <div class="col-m-4"></div>
             <form name="registro" id="registro" action="../controlador.jsp" class="col-m-6 col-l-4" novalidate> 
                 <h1>Registrate</h1>
-                <div class="m1">
-                    <label for="email">
-                        <span>Introduce tu email: </span>
-                        <input type="email" name="email" id="email" minlength="10" maxlength="25" required />
-                        <span class="error" aria-live="polite"></span>   
-                    </label>
+                <div class=" row">
+                    <div class="col-m-6">
+                        <label for="email">
+                            <span>email </span>
+                            <input class="input" type="email" name="email" id="email" minlength="10" maxlength="25" required />
+                            <span class="error" aria-live="polite"></span>   
+                        </label>
+                    </div>
+                    <div class="col-m-6">
+
+                        <label for="password">
+                            <span>contraseña </span>
+                            <input class="input" type="password" name="password" id="password" required minlength="8" maxlength="15"/>
+                            <span class="error" aria-live="polite"></span>   
+                        </label>
+                    </div>
                 </div>
-                <div class="m1">
-                    <label for="dni">
-                        <span>Introduce tu dni: </span>
-                        <input type="text" name="dni" id="dni" required pattern="^[0-9]{2}\.[0-9]{3}\.[0-9]{3}-[A-Z]$"/>
-                        <span class="error" aria-live="polite"></span>   
-                    </label>
+                <hr>
+                <div class="row m1">
+                    <div class="col-m-6">
+                        <label for="dni">
+                            <span>dni: </span>
+                            <input class="input" class="input" type="text" name="dni" id="dni" required pattern="^[0-9]{2}\.[0-9]{3}\.[0-9]{3}-[A-Z]$"/>
+                            <span class="error" aria-live="polite"></span>   
+                        </label>
+
+                    </div>
+                    <div class="col-m-6">
+                        <label for="nick">
+                            <span>nick: </span>
+                            <input class="input" class="input" type="text" name="nick" id="nick" required minlength="5" maxlength="15"/>
+                            <span class="error" aria-live="polite"></span>   
+                        </label>
+                    </div>
                 </div>
-                <div class="m1">
-                    <label for="nick">
-                        <span>Introduce tu nick: </span>
-                        <input type="text" name="nick" id="nick" required minlength="5" maxlength="15"/>
-                        <span class="error" aria-live="polite"></span>   
-                    </label>
+                <div class="m1 row">
+                    <div class="col-m-6">
+                        <label for="tfn">
+                            <span>teléfono: </span>
+                            <input class="input" type="text" name="tfn" id="tfn" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{3}$" required/>
+                            <span class="error" aria-live="polite"></span>   
+                        </label>
+                    </div>
+                    <div class="col-m-6">
+                        <label for="age">
+                            <span>edad: </span>
+                            <input class="input" type="text" name="age" id="age" pattern="^[0-9]{1,3}$" required/>
+                            <span class="error" aria-live="polite"></span>   
+                        </label>
+                    </div>
                 </div>
 
-                <div class="m1">
-                    <label for="tfn">
-                        <span>Introduce tu teléfono: </span>
-                        <input type="text" name="tfn" id="tfn" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{3}$" required/>
-                        <span class="error" aria-live="polite"></span>   
-                    </label>
-                </div>
-                <div class="m1">
-                    <label for="age">
-                        <span>Introduce tu edad: </span>
-                        <input type="text" name="age" id="age" pattern="^[0-9]{1,3}$" required/>
-                        <span class="error" aria-live="polite"></span>   
-                    </label>
-                </div>
-                <div class="m1">
-                    <label for="password">
-                        <span>Introduce tu contraseña: </span>
-                        <input type="password" name="password" id="password" required minlength="8" maxlength="15"/>
-                        <span class="error" aria-live="polite"></span>   
-                    </label>
-                </div>
-                <div class="m1">
-                    <label for="password">
-                        <span>Repite tu contraseña: </span>
-                        <input type="password" name="password2" id="psswd2" required />
-                        <span class="error" aria-live="polite"></span>   
-                    </label>
-                </div>
                 <div class="row">
                     <div class="col-m-3"></div>
                     <div class="col-m-6">
